@@ -16,9 +16,12 @@ Depois, invoque `$instagram-carousel` e forneça o conteúdo, o público, o núm
 
 O exemplo é um carrossel StackLab de cinco telas sobre boas práticas para mensagens via API de WhatsApp. Ele usa HTML/CSS, assets locais, ícones Phosphor, fonte Anton e exportação PNG em 1080 × 1350 px.
 
-![Abertura do exemplo](examples/stacklab-whatsapp-api/imagens/01-mensagens-api-whatsapp.png)
-
-![Tela final do exemplo](examples/stacklab-whatsapp-api/imagens/05-mensagens-api-whatsapp.png)
+<table>
+  <tr>
+    <td align="center"><strong>Abertura</strong><br><img src="examples/stacklab-whatsapp-api/imagens/01-mensagens-api-whatsapp.png" alt="Abertura do carrossel" width="320"></td>
+    <td align="center"><strong>Tela final</strong><br><img src="examples/stacklab-whatsapp-api/imagens/05-mensagens-api-whatsapp.png" alt="Tela final do carrossel" width="320"></td>
+  </tr>
+</table>
 
 - [Fonte HTML e assets](examples/stacklab-whatsapp-api/)
 - [Instruções para exportar o exemplo](examples/stacklab-whatsapp-api/README.md)
