@@ -1,6 +1,6 @@
 # Direção para carrosséis de eventos
 
-Leia esta referência quando uma conferência, live, encontro, aula, corrida, lançamento ou outra reunião for o assunto principal e o objetivo for gerar presença, inscrição ou participação. Esta direção de divulgação de evento é diferente de um carrossel que ensina um assunto. Adapte os conceitos visuais à marca e aos materiais do usuário; não reproduza o layout, a arte ou o tratamento tipográfico exatos de uma referência.
+Leia esta referência quando uma conferência, live, encontro, aula, corrida, lançamento ou outra reunião for o assunto principal e o objetivo for gerar presença, inscrição ou participação. Leia também [público, valor e comprovação](audience-value-and-proof.pt-BR.md) para tornar o convite relevante e sustentar suas afirmações. Esta direção de divulgação de evento é diferente de um carrossel que ensina um assunto. Adapte os conceitos visuais à marca e aos materiais do usuário; não reproduza o layout, a arte ou o tratamento tipográfico exatos de uma referência.
 
 ## Princípios visuais para eventos
 

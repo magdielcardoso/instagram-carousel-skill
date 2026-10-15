@@ -1,6 +1,6 @@
 # Event carousel direction
 
-Read this reference when a conference, livestream, meetup, class, race, launch event, or other gathering is the main subject and the goal is attendance, registration, or participation. This is an event-promotion direction, distinct from a carousel that teaches a subject. Adapt the visual concepts to the user's brand and supplied assets; do not reproduce a reference's exact layout, artwork, or type treatment.
+Read this reference when a conference, livestream, meetup, class, race, launch event, or other gathering is the main subject and the goal is attendance, registration, or participation. Also read [audience, value, and proof](audience-value-and-proof.md) to make the invitation relevant and substantiate its claims. This is an event-promotion direction, distinct from a carousel that teaches a subject. Adapt the visual concepts to the user's brand and supplied assets; do not reproduce a reference's exact layout, artwork, or type treatment.
 
 ## Event design principles
 

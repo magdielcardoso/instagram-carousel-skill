@@ -1,6 +1,6 @@
 # Promotional carousel direction
 
-Read this reference when the primary goal is to present or sell a product, service, business, or website; announce a feature or offer; or encourage a trial. It distills campaign concepts from visual references. It is not a fixed template and should not drive educational or informational carousels by default.
+Read this reference when the primary goal is to present or sell a product, service, business, or website; announce a feature or offer; or encourage a trial. Also read [audience, value, and proof](audience-value-and-proof.md) to shape a specific, evidence-backed message. This reference distills campaign concepts from visual examples; it is not a fixed template and should not drive educational or informational carousels by default.
 
 ## Campaign principles
 

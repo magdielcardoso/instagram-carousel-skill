@@ -16,7 +16,7 @@ Invoke `$instagram-carousel` and provide the content, audience, slide count, and
 
 ## Design guidance
 
-The skill routes by objective: educational/informational, product or service promotion, or event promotion. Shared guidance covers contrast, composition, type hierarchy, spacing, corner treatments, iconography, and visual review. Promotional and event references are separate so campaign techniques do not turn informational content into advertising.
+The skill routes by objective: educational/informational, product or service promotion, or event promotion. Shared guidance covers contrast, composition, type hierarchy, spacing, corner treatments, iconography, and visual review. Persuasive routes also use an [audience-value-proof framework](skills/instagram-carousel/references/audience-value-and-proof.md), kept separate from the editorial approach so campaign techniques do not turn informational content into advertising. The adaptation includes [source attribution and full usage terms](skills/instagram-carousel/references/revenue-centric-design-license.txt), including its restricted-use boundary.
 
 ## Included example
 
@@ -54,7 +54,7 @@ Invoque `$instagram-carousel` e informe o conteúdo, o público, a quantidade de
 
 ### Orientações de design
 
-A skill escolhe a direção pelo objetivo: conteúdo educativo/informativo, divulgação de produto ou serviço, ou divulgação de evento. As orientações gerais cobrem contraste, composição, hierarquia tipográfica, espaçamento, cantos, ícones e revisão visual. As referências promocional e de evento são separadas para que técnicas de campanha não transformem conteúdo informativo em anúncio.
+A skill escolhe a direção pelo objetivo: conteúdo educativo/informativo, divulgação de produto ou serviço, ou divulgação de evento. As orientações gerais cobrem contraste, composição, hierarquia tipográfica, espaçamento, cantos, ícones e revisão visual. As direções persuasivas também usam um [framework de público, valor e comprovação](skills/instagram-carousel/references/audience-value-and-proof.pt-BR.md), separado da abordagem editorial para que técnicas de campanha não transformem conteúdo informativo em anúncio. A adaptação inclui [atribuição e termos completos de uso da fonte](skills/instagram-carousel/references/revenue-centric-design-license.txt), com seu limite de aplicação.
 
 ### Exemplo incluído
 

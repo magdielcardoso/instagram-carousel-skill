@@ -1,6 +1,6 @@
 # Direção para carrosséis promocionais
 
-Leia esta referência quando o objetivo principal for apresentar ou vender um produto, serviço, negócio ou site; anunciar uma funcionalidade ou oferta; ou incentivar um teste. Ela reúne conceitos de campanha observados em referências visuais. Não é um template fixo e não deve orientar por padrão carrosséis educativos ou informativos.
+Leia esta referência quando o objetivo principal for apresentar ou vender um produto, serviço, negócio ou site; anunciar uma funcionalidade ou oferta; ou incentivar um teste. Leia também [público, valor e comprovação](audience-value-and-proof.pt-BR.md) para estruturar uma mensagem específica e sustentada por evidências. Esta referência reúne conceitos de campanha observados em exemplos visuais; não é um template fixo e não deve orientar por padrão carrosséis educativos ou informativos.
 
 ## Princípios de campanha
 
