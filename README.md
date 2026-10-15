@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/instagram-carousel-cover.png" alt="Capa cartoon da skill Instagram Carousel" width="100%"></p>
+
 # Instagram Carousel Skill
 
 Crie carrosséis para Instagram com uma narrativa visual clara, conteúdo conciso e design adaptado à marca fornecida no pedido. A skill pode criar HTML e imagens prontas para publicar; o exemplo incluso mostra uma aplicação StackLab com cinco telas.
