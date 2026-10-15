@@ -18,8 +18,9 @@ O exemplo é um carrossel StackLab de cinco telas sobre boas práticas para mens
 
 <table>
   <tr>
-    <td align="center"><strong>Abertura</strong><br><img src="examples/stacklab-whatsapp-api/imagens/01-mensagens-api-whatsapp.png" alt="Abertura do carrossel" width="320"></td>
-    <td align="center"><strong>Tela final</strong><br><img src="examples/stacklab-whatsapp-api/imagens/05-mensagens-api-whatsapp.png" alt="Tela final do carrossel" width="320"></td>
+    <td align="center" width="33%"><strong>01 · Abertura</strong><br><img src="examples/stacklab-whatsapp-api/imagens/01-mensagens-api-whatsapp.png" alt="Abertura do carrossel" width="240"></td>
+    <td align="center" width="33%"><strong>03 · Conteúdo</strong><br><img src="examples/stacklab-whatsapp-api/imagens/03-mensagens-api-whatsapp.png" alt="Tela de conteúdo do carrossel" width="240"></td>
+    <td align="center" width="33%"><strong>05 · CTA final</strong><br><img src="examples/stacklab-whatsapp-api/imagens/05-mensagens-api-whatsapp.png" alt="Tela final com chamada para ação" width="240"></td>
   </tr>
 </table>
 
