@@ -1,6 +1,6 @@
 interface:
-  display_name: "Carrossel Instagram"
-  short_description: "Cria carrosséis visuais alinhados à marca e ao conteúdo"
-  default_prompt: "Use $instagram-carousel para criar um carrossel visual com esta marca e este conteúdo."
+  display_name: "Instagram Carousel"
+  short_description: "Designs clear, brand-led Instagram carousels"
+  default_prompt: "Use $instagram-carousel to create a polished carousel for this brand and content."
 policy:
   allow_implicit_invocation: true

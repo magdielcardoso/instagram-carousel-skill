@@ -1,27 +1,27 @@
-# Direção para carrosséis promocionais
+# Promotional carousel direction
 
-Leia esta referência somente quando o objetivo principal for apresentar ou vender um produto, serviço, negócio ou site, anunciar uma funcionalidade, divulgar uma oferta ou incentivar um teste. Ela destila uma linguagem de campanha observada em referências visuais; não é um modelo obrigatório nem deve orientar por padrão carrosséis educativos ou informativos.
+Read this reference when the primary goal is to present or sell a product, service, business, or website; announce a feature or offer; or encourage a trial. It distills campaign concepts from visual references. It is not a fixed template and should not drive educational or informational carousels by default.
 
-## O que torna a campanha clara e atraente
+## Campaign principles
 
-- Abra com uma saudação, novidade ou benefício fácil de reconhecer. Use um título curto e grande, com contraste suficiente para continuar legível na miniatura.
-- Dê à campanha uma assinatura visual consistente: cor, forma, personagem, grafismo ou selo que ajude a reconhecer as telas como parte da mesma história. Use elementos da marca do usuário e não copie os ativos ou a identidade das referências.
-- Combine impacto e leitura. Gradientes, formas, cores de apoio, recortes e ícones podem enriquecer a peça quando preservam hierarquia, contraste e margens seguras.
-- Mostre o produto, a interface ou o serviço em uso como prova visual do benefício. Prefira capturas e materiais reais fornecidos ou disponíveis na marca. Se precisar criar uma representação, identifique-a como ilustração e não invente recursos, resultados ou telas reais.
-- Faça a promessa e a demonstração trabalharem juntas: texto enxuto explica o ganho; a imagem mostra onde ele acontece. Use setas, gestos, molduras de interface ou destaques para conduzir o olhar apenas quando apontarem para algo concreto.
-- Mantenha uma linguagem comum, mas varie a composição e a escala entre telas. Uma abertura tipográfica, uma demonstração de produto e um fechamento com CTA podem criar ritmo sem repetir a mesma grade.
-- Feche com a ação comercial realmente desejada, como acessar, testar, conhecer ou comprar. Destaque-a com clareza e não invente escassez, prazo, condição ou garantia.
+- Lead with a recognizable announcement, need, or specific benefit. Make the cover promise easy to understand at thumbnail size and support it with a short context line only when useful.
+- Build a campaign signature from the user's actual brand: a recurring color, vector motif, shape, character, or small label. Repeat it with variation so slides feel connected without becoming duplicates. Never reuse another brand's logo or proprietary artwork.
+- Use a strong, limited palette and one dominant focal point per slide. Gradients, geometric fields, texture, cutouts, and accent colors can add energy when type and proof stay clear.
+- Show the product or service working as evidence. Prefer real, approved screenshots, packaging, outcomes, or workflow imagery. If the visual is a mockup or illustration, make that clear; do not invent product capabilities, customer results, endorsements, or conditions.
+- Pair a concise claim with a visual that demonstrates or contextualizes it. Use arrows, hands, highlights, or framing only when they point to a real detail. Keep supporting text close enough to the proof that their relationship is obvious.
+- Vary composition across the sequence: for example, an expressive cover, a benefit-focused slide, a product demonstration, a proof or qualification slide, and an action-led close. Keep typography, palette, motifs, and spacing recognizable across the campaign.
+- End with the requested commercial action: visit, explore, try, book, or buy. Make the action easy to spot and do not invent urgency, scarcity, guarantees, discounts, or deadlines.
 
-## Narrativa possível
+## Possible story arc
 
-Adapte ao material e ao número de telas; não force etapas sem prova disponível.
+Adapt to the facts and slide count; skip steps that cannot be substantiated.
 
-1. Anúncio ou gancho da campanha.
-2. Benefício concreto para a pessoa.
-3. Demonstração do produto, funcionalidade ou serviço.
-4. Contexto, condição ou evidência que sustente a oferta.
-5. CTA direto.
+1. Campaign hook or announcement.
+2. Concrete audience benefit or problem solved.
+3. Product, feature, or service in use.
+4. Evidence, qualification, or useful context.
+5. Clear CTA.
 
-## Limite com conteúdo educativo/informativo
+## Keep the objective distinct
 
-Em um conteúdo cujo objetivo principal seja explicar conceitos, processos ou boas práticas, não use esta narrativa promocional como padrão. Evite ofertas, urgência, promessas de campanha e uma demonstração comercial só para imitar uma referência. Use a identidade visual da marca e os princípios gerais de hierarquia, contraste, ritmo e ilustração funcional; organize a história para facilitar o entendimento.
+If the main goal is to explain a concept, process, or best practice, do not use this promotional arc as the default. Avoid offers, campaign urgency, and a sales demonstration added only to imitate a reference. Keep the brand's visual system and general principles of hierarchy, contrast, illustration, and pacing; structure the content to make the subject understandable.

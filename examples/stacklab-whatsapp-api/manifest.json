@@ -1,5 +1,7 @@
 {
   "title": "Boas práticas para mensagens com API de WhatsApp",
+  "titleEnglish": "Best practices for WhatsApp API messaging",
+  "descriptionEnglish": "A five-slide, Portuguese-language StackLab carousel about responsible WhatsApp API messaging.",
   "brand": "StackLab",
   "language": "pt-BR",
   "slides": 5,

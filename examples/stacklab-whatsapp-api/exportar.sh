@@ -20,11 +20,11 @@ if [[ -z "$BROWSER_BIN" ]]; then
 fi
 
 if [[ -z "$BROWSER_BIN" || ! -x "$BROWSER_BIN" ]]; then
-  echo "Chrome/Chromium não encontrado. Defina CHROME_BIN para o executável." >&2
+  echo "Chrome/Chromium was not found. Set CHROME_BIN to its executable path." >&2
   exit 1
 fi
 if ! command -v "$MAGICK_BIN" >/dev/null 2>&1; then
-  echo "ImageMagick não encontrado. Defina MAGICK_BIN para o executável magick." >&2
+  echo "ImageMagick was not found. Set MAGICK_BIN to the magick executable path." >&2
   exit 1
 fi
 
@@ -37,13 +37,13 @@ for ((slide=1; slide<=SLIDE_COUNT; slide+=1)); do
   RAW_IMAGE="${TMPDIR:-/tmp}/instagram-carousel-$slide-$$.png"
   if ! "$BROWSER_BIN" --headless --disable-gpu --no-sandbox --hide-scrollbars --disable-extensions --disable-background-networking --disable-default-apps --no-first-run --screenshot="$RAW_IMAGE" --window-size=1080,1350 --force-device-scale-factor=1 --virtual-time-budget=300 "${HTML_URL}?slide=$slide" >/dev/null 2>&1; then
     if [[ ! -s "$RAW_IMAGE" ]]; then
-      echo "Chrome não gerou a tela $slide." >&2
+      echo "Chrome did not render slide $slide." >&2
       rm -f "$RAW_IMAGE"
       exit 1
     fi
   fi
   if [[ ! -s "$RAW_IMAGE" ]]; then
-    echo "Chrome não gerou a tela $slide." >&2
+    echo "Chrome did not render slide $slide." >&2
     exit 1
   fi
   "$MAGICK_BIN" "$RAW_IMAGE" -crop 1080x1350+0+0 +repage -strip -define png:exclude-chunk=date,time "$BASE_DIR/$RELATIVE_OUTPUT"
