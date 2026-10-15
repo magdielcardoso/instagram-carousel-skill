@@ -2,6 +2,8 @@
 
 Use esta referência quando o carrossel precisar de uma superfície visualmente construída ou quando um preenchimento liso parecer inacabado. Trate o fundo como parte da narrativa visual: ele pode estabelecer material, profundidade, direção, reconhecimento de marca e continuidade. Deve apoiar o conteúdo sem se tornar um segundo título.
 
+Não confunda fundo elaborado com formas grandes. Em composições clean, construa textura com grid discreto, meio-tom, linhas ou granulação, deixando tipografia, capturas do produto e diagramas em primeiro plano carregarem o peso visual. Reserve silhuetas grandes para uma mensagem clara ou uma referência enviada pelo usuário.
+
 ## Escolha primeiro a função visual
 
 Antes de escrever CSS, decida o que o fundo deve comunicar. Algumas funções úteis:
@@ -21,7 +23,7 @@ Pense do fundo para a frente:
 1. **Base:** cor da marca, neutro ou imagem.
 2. **Atmosfera:** tonalização discreta, variação que lembre papel ou granulação de baixa opacidade.
 3. **Estrutura:** grade, hachura, pontos, curvas de nível ou linhas de perspectiva.
-4. **Motivo:** forma geométrica grande, fragmento do logo, ícone, caminho ou ilustração ligada ao assunto.
+4. **Motivo opcional:** forma geométrica grande, fragmento do logo, ícone, caminho ou ilustração ligada ao assunto somente quando apoiar a mensagem ou a referência.
 5. **Proteção do conteúdo:** área limpa ou sobreposição local atrás do texto importante, quando necessário.
 
 Nem todo slide precisa das cinco camadas. Duas ou três camadas intencionais geralmente comunicam melhor do que acumular efeitos. Mantenha texto e provas do produto em primeiro plano; não aplique padrões carregados sobre capturas de interface ou conteúdo essencial.
@@ -32,7 +34,7 @@ Nem todo slide precisa das cinco camadas. Duas ou três camadas intencionais ger
 - Use `repeating-linear-gradient()` para grades delicadas, hachuras diagonais, papel pautado ou linhas de blueprint. Mantenha o contraste das linhas baixo e use uma máscara ou pseudo-elemento recortado para limitar o padrão a áreas específicas.
 - Use `radial-gradient()` para pontos de meio-tom, anéis ou uma transição tonal. Prefira estrutura visível, como pontos ou contornos, a um brilho colorido em forma de holofote atrás do título.
 - Use `conic-gradient()` para criar um campo rotacional, segmentado ou direcional quando combinar com a marca. Escolha centro e ângulo com intenção; não adicione gradiente apenas para fazer uma superfície lisa parecer movimentada.
-- Use `::before` e `::after` para formas grandes que ultrapassem o canvas: círculos, faixas, anéis, molduras e painéis deslocados. Combine com `clip-path`, `border-radius`, bordas ou `mask-image` para ajustar a forma à composição.
+- Use `::before` e `::after` para formas grandes que ultrapassem o canvas somente quando tiverem uma função clara: círculos, faixas, anéis, molduras e painéis deslocados. Combine com `clip-path`, `border-radius`, bordas ou `mask-image` para ajustar a forma à composição; não acrescente uma silhueta apenas para preencher uma área tranquila.
 - Use SVG inline para caminhos precisos, line art, logos, ícones e formas irregulares. Para um percurso ou marca personalizada, SVG costuma ficar mais claro e previsível do que uma pilha complexa de formas CSS.
 - Use textura local transparente ou uma pequena camada inline de turbulência SVG para uma granulação sutil. Mantenha a opacidade baixa e inspecione a imagem rasterizada; o ruído pode ficar mais forte ao reduzir a escala.
 - Use `mix-blend-mode` somente quando criar um efeito de material específico. Ele pode alterar o contraste entre navegadores e sobre camadas semitransparentes; confira a imagem final exportada.

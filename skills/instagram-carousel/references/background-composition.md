@@ -2,6 +2,8 @@
 
 Use this reference when a carousel needs a designed surface or when a plain fill feels unfinished. Treat the background as part of the visual story: it can establish material, depth, direction, brand recognition, and continuity. It should support the content rather than become a second headline.
 
+Do not equate a designed background with large shapes. In clean compositions, build texture with a restrained grid, halftone, ruled lines, or grain, and let foreground typography, product captures, and diagrams carry the visual weight. Reserve oversized silhouettes for a clear message or a user-provided reference.
+
 ## Choose a visual role first
 
 Before writing CSS, decide what the background should communicate. Useful roles include:
@@ -21,7 +23,7 @@ Think from back to front:
 1. **Base:** a brand color, neutral, or image.
 2. **Atmosphere:** a restrained tint, paper-like tonal shift, or low-opacity grain.
 3. **Structure:** a grid, hatch, dots, contour lines, or perspective marks.
-4. **Motif:** a large geometric form, logo fragment, icon, path, or subject-specific illustration.
+4. **Optional motif:** a larger geometric form, logo fragment, icon, path, or subject-specific illustration only when it supports the message or reference.
 5. **Content protection:** a clear region or local scrim behind important type when needed.
 
 Not every slide needs all five layers. Two or three intentional layers usually create more clarity than stacking effects everywhere. Keep text and product evidence in the foreground; do not place busy patterns over UI screenshots or essential copy.
@@ -32,7 +34,7 @@ Not every slide needs all five layers. Two or three intentional layers usually c
 - Use `repeating-linear-gradient()` for fine grids, diagonal hatching, ruled paper, or blueprint lines. Keep the line contrast low and use a mask or a cropped pseudo-element to confine the pattern to selected regions.
 - Use `radial-gradient()` for halftone dots, rings, or a tonal fade. Prefer visible structure such as dots or contours over an accent-colored spotlight glow behind the headline.
 - Use `conic-gradient()` for a rotational, segmented, or directional field when it matches the brand. Keep the center and angle purposeful; do not add a gradient merely to make a flat surface look busy.
-- Use `::before` and `::after` for oversized shapes that bleed off canvas: circles, bands, rings, frames, and offset panels. Pair them with `clip-path`, `border-radius`, borders, or `mask-image` to make a shape fit the composition.
+- Use `::before` and `::after` for oversized shapes that bleed off canvas only when they have a clear role: circles, bands, rings, frames, and offset panels. Pair them with `clip-path`, `border-radius`, borders, or `mask-image` to fit the composition; do not add a silhouette just to fill a quiet area.
 - Use inline SVG for precise paths, line art, logos, icons, and irregular forms. SVG is often clearer and more stable than a complicated stack of CSS shapes for a route or branded mark.
 - Use a local transparent noise texture or a small inline SVG turbulence layer for subtle grain. Keep opacity low and inspect the raster export; browser noise can look harsher after downscaling.
 - Use `mix-blend-mode` only when it adds a specific material effect. It can change contrast across browsers and underneath semi-transparent layers, so inspect the final rendered PNG.

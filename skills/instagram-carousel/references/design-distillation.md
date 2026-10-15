@@ -22,7 +22,7 @@ Use this reference for every carousel. It turns brand direction into a repeatabl
 - Give each slide one dominant focal point and a deliberate path through the information. Use alignment, scale, overlap, directional shapes, and empty space to make that path clear.
 - Build a small composition family, not one repeated layout: keep a few brand cues consistent, then vary image scale, text placement, density, and visual structure to create pace.
 - When the brand has other carousels, compare their compositions and choose a genuinely different art direction for the new subject. Change the structure, hierarchy, and visual language where appropriate; a palette swap on the same slide skeleton is not meaningful variation. Keep recognizable brand cues, but let the subject and objective determine the composition.
-- Give the background a purposeful role. When it suits the brand and the user has not asked for a plain field, prefer restrained texture, a grid, geometric forms, or a brand- or subject-relevant logo/icon motif over a featureless fill. Vary its scale and placement across the sequence; keep it low-noise, protect text contrast, and do not decorate every empty area or watermark every slide by default. For layered CSS techniques and practical background recipes, read [background-composition.md](background-composition.md).
+- Give the background a purposeful role. For clean directions, start with restrained texture or a grid rather than a featureless fill. Use large geometric forms or logo/icon motifs only when the brief or message gives them a clear role; do not add broad silhouettes just to occupy negative space. Keep backgrounds low-noise, protect text contrast, and do not decorate every open area or watermark every slide by default. For layered CSS techniques and practical background recipes, read [background-composition.md](background-composition.md).
 - Balance dense and quiet areas. A large display title or busy image needs nearby breathing room. Do not fill every open area with a card, badge, icon, texture, or ornament.
 - Use grids to align edges and groups, not to make every slide symmetrical. Asymmetry is useful when visual weight still feels balanced and the reading order remains obvious.
 
@@ -73,6 +73,7 @@ Use this reference for every carousel. It turns brand direction into a repeatabl
 
 ## 8. Final review
 
+- Inspect the exported PNGs after every render; the source HTML and a successful export command are not visual sign-off. Use two passes: at macro scale, review an ordered montage at feed size for hierarchy, rhythm, balance, crop, and lower-area use; at micro scale, inspect individual slides at full resolution and zoom for text legibility, contrast, icon centering and baseline alignment, padding, radii, clipping, and asset rendering. Correct visible defects in the source and re-export until both passes are clean.
 - Check all slides at full size and as a small feed thumbnail. Confirm the title and supporting line survive downscaling.
 - Follow the sequence in order: is each slide's role clear, does the story progress, and is the CTA easy to find?
 - Check the final rendered image for clipping, overlaps, weak contrast, cramped insets, font fallback, inconsistent alignment, accidental widows, and missing assets.
