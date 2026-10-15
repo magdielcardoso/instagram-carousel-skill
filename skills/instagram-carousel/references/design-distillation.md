@@ -21,6 +21,16 @@ Use esta revisão ao criar ou refinar o desenho do carrossel. O objetivo é redu
 - Mantenha cartões, molduras, badges, texturas e sombras apenas quando organizarem informação ou reforçarem a marca. Remova o adorno que não explica, diferencia nem orienta.
 - Dê preferência a um CTA final claro. Não acrescente ações concorrentes só para preencher espaço.
 
+## Capa e título
+
+- Dê ao primeiro slide um título que nomeie o assunto ou apresente a promessa real do carrossel. Ajuste a voz e o vocabulário à marca, ao público e ao tipo de conteúdo.
+- Construa hierarquia com contraste de escala, peso e cor: uma frase de apoio pode contextualizar e uma palavra ou trecho curto pode carregar o maior destaque. Preserve a leitura do texto completo.
+- Escolha a fonte de display pela personalidade da marca e do assunto. Palavras quebradas em linhas, blocos tipográficos sobrepostos ou uma leve inclinação podem criar movimento quando forem coerentes com a arte.
+- Sobre fotografia ou imagem detalhada, proteja a legibilidade com contraste, uma faixa ou uma área tonal de apoio. Reduzir a saturação ou escurecer a imagem só funciona quando também combina com a identidade da marca.
+- Use poucos acentos gráficos — cor, contorno, recorte ou pequeno desenho vetorial — para reforçar a ideia do título e conduzir o olhar. Mantenha-os fora das letras e dos detalhes importantes da imagem.
+- Leia a capa em miniatura: o título continua claro, combina com a identidade e representa corretamente o conteúdo?
+- Não torne a fotografia em preto e branco, o neon, as faixas inclinadas ou qualquer outra forma da referência obrigatórios. Adapte os princípios de contraste, hierarquia e ritmo a cada marca.
+
 ## Preserve uma identidade reconhecível
 
 Um carrossel pode ser rico em cor, ilustração, ícones e composição. Riqueza visual funciona quando cada elemento amplia a mensagem ou a identidade. Não troque riqueza por um layout genérico minimalista; escolha as partes que merecem destaque e elimine as que se repetem sem propósito.
