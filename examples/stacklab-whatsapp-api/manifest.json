@@ -1,0 +1,44 @@
+{
+  "title": "Boas práticas para mensagens com API de WhatsApp",
+  "brand": "StackLab",
+  "language": "pt-BR",
+  "slides": 5,
+  "dimensions": {
+    "width": 1080,
+    "height": 1350
+  },
+  "format": "PNG",
+  "source": "https://blog.stackzap.com.br/boas-praticas/boas-praticas-mensagens-api-de-whatsapp/",
+  "files": [
+    "imagens/01-mensagens-api-whatsapp.png",
+    "imagens/02-mensagens-api-whatsapp.png",
+    "imagens/03-mensagens-api-whatsapp.png",
+    "imagens/04-mensagens-api-whatsapp.png",
+    "imagens/05-mensagens-api-whatsapp.png"
+  ],
+  "brandLogoAsset": "assets/stacklab-logo.png",
+  "iconLibrary": {
+    "name": "Phosphor Icons Web",
+    "version": "2.1.2",
+    "styles": [
+      "Regular",
+      "Duotone"
+    ],
+    "license": "MIT",
+    "assets": [
+      "assets/phosphor-icons.css",
+      "assets/Phosphor.woff2",
+      "assets/Phosphor-Duotone.woff2",
+      "assets/PHOSPHOR-LICENSE.txt"
+    ]
+  },
+  "displayFont": {
+    "name": "Anton",
+    "weight": 400,
+    "scope": "slide 1 and slide 5 titles",
+    "css": "assets/display-title.css",
+    "file": "assets/Anton-Regular.ttf",
+    "license": "OFL-1.1",
+    "licenseFile": "assets/ANTON-OFL.txt"
+  }
+}
