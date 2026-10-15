@@ -1,0 +1,29 @@
+/* Phosphor Icons Web 2.1.2 — local subset used by this carousel. See PHOSPHOR-LICENSE.txt. */
+@font-face{font-family:Phosphor;src:url("Phosphor.woff2") format("woff2");font-style:normal;font-weight:400;font-display:block}
+@font-face{font-family:Phosphor-Duotone;src:url("Phosphor-Duotone.woff2") format("woff2");font-style:normal;font-weight:400;font-display:block}
+.ph,.ph-duotone{display:inline-block;font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.ph{font-family:Phosphor!important}
+.ph-duotone{font-family:Phosphor-Duotone!important}
+.ph.ph-arrow-right:before{content:"\e06c";}
+.ph.ph-check:before{content:"\e182";}
+.ph.ph-arrows-clockwise:before{content:"\e094";}
+.ph.ph-database:before{content:"\e1de";}
+.ph.ph-link-simple:before{content:"\e2e6";}
+.ph.ph-sign-out:before{content:"\e42a";}
+.ph.ph-user:before{content:"\e4c2";}
+.ph-duotone.ph-bookmark-simple:before{content:"\e0ea";opacity:0.2;}
+.ph-duotone.ph-bookmark-simple:after{content:"\e0eb";margin-left:-1em;}
+.ph-duotone.ph-chat-centered-dots:before{content:"\e164";opacity:0.2;}
+.ph-duotone.ph-chat-centered-dots:after{content:"\e165";margin-left:-1em;}
+.ph-duotone.ph-chat-circle-dots:before{content:"\e16c";opacity:0.2;}
+.ph-duotone.ph-chat-circle-dots:after{content:"\e16d";margin-left:-1em;}
+.ph-duotone.ph-clock:before{content:"\e19a";opacity:0.2;}
+.ph-duotone.ph-clock:after{content:"\e19b";margin-left:-1em;}
+.ph-duotone.ph-map-pin:before{content:"\e316";opacity:0.2;}
+.ph-duotone.ph-map-pin:after{content:"\e317";margin-left:-1em;}
+.ph-duotone.ph-shield-check:before{content:"\e40c";opacity:0.2;}
+.ph-duotone.ph-shield-check:after{content:"\e40f";margin-left:-1em;}
+.ph-duotone.ph-target:before{content:"\e47c";opacity:0.2;}
+.ph-duotone.ph-target:after{content:"\e47d";margin-left:-1em;}
+.ph-duotone.ph-warning:before{content:"\e4e0";opacity:0.2;}
+.ph-duotone.ph-warning:after{content:"\e4e1";margin-left:-1em;}

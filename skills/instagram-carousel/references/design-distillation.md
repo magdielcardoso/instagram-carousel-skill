@@ -9,12 +9,20 @@ Use this reference for every carousel. It turns brand direction into a repeatabl
 - Keep slide titles specific and useful. The first slide must earn attention while accurately representing what follows. Use a second line, eyebrow, or short deck only when it adds context.
 - Keep copy short enough to scan. Break long explanations into meaningful phrases, steps, or labels; preserve qualifications that change the meaning of a claim.
 
+### Retention loop
+
+- Make the cover's focal point and hook communicate the subject at a glance. The title, supporting line, and visual should work together to earn attention; a decorative treatment alone is not a hook.
+- Give the sequence a truthful curiosity loop: each interior slide should satisfy the question, expectation, or promise raised just before it, then introduce one relevant next question, consequence, or step. Carry that bridge through both copy and visual direction with a preview, comparison, directional cue, or natural teaser when useful.
+- Let the last slide pay off the sequence before presenting the requested CTA. Do not withhold essential information, invent stakes, or add empty cliffhangers. For educational and informational carousels, curiosity should come from understanding the next real step, not from campaign urgency or a sales funnel.
+
 ## 2. Canvas, safe area, and composition
 
 - Default canvas: **1080 × 1350 px**, 4:5. Respect a user-selected size when provided.
 - Start with a **64–80 px inset** on all sides for important copy and marks; increase it where the composition or platform crop needs room. Keep decorative shapes free to bleed only when they cannot obscure content.
 - Give each slide one dominant focal point and a deliberate path through the information. Use alignment, scale, overlap, directional shapes, and empty space to make that path clear.
 - Build a small composition family, not one repeated layout: keep a few brand cues consistent, then vary image scale, text placement, density, and visual structure to create pace.
+- When the brand has other carousels, compare their compositions and choose a genuinely different art direction for the new subject. Change the structure, hierarchy, and visual language where appropriate; a palette swap on the same slide skeleton is not meaningful variation. Keep recognizable brand cues, but let the subject and objective determine the composition.
+- Give the background a purposeful role. When it suits the brand and the user has not asked for a plain field, prefer restrained texture, a grid, geometric forms, or a brand- or subject-relevant logo/icon motif over a featureless fill. Vary its scale and placement across the sequence; keep it low-noise, protect text contrast, and do not decorate every empty area or watermark every slide by default.
 - Balance dense and quiet areas. A large display title or busy image needs nearby breathing room. Do not fill every open area with a card, badge, icon, texture, or ornament.
 - Use grids to align edges and groups, not to make every slide symmetrical. Asymmetry is useful when visual weight still feels balanced and the reading order remains obvious.
 

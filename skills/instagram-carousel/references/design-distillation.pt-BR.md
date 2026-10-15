@@ -9,12 +9,20 @@ Use esta referência em qualquer carrossel. Ela transforma a identidade da marca
 - Faça títulos específicos e úteis. O primeiro slide deve chamar atenção e representar corretamente o conteúdo seguinte. Use antetítulo ou linha de apoio apenas quando trouxer contexto.
 - Enxugue o texto para leitura rápida. Divida explicações longas em frases, etapas ou rótulos com sentido; preserve ressalvas que alterem o significado da afirmação.
 
+### Loop de retenção
+
+- Faça o ponto focal e o gancho da capa comunicarem o assunto de relance. Título, linha de apoio e visual devem trabalhar juntos para conquistar atenção; um tratamento decorativo sozinho não é um gancho.
+- Dê à sequência um loop de curiosidade verdadeiro: cada slide interno deve atender à pergunta, expectativa ou promessa levantada antes e, em seguida, apresentar uma próxima pergunta, consequência ou etapa relevante. Faça essa ponte aparecer na copy e na direção visual com uma prévia, comparação, sinal direcional ou teaser natural quando ajudar.
+- Deixe o último slide cumprir a promessa da sequência antes do CTA solicitado. Não esconda informações essenciais, invente riscos nem acrescente cliffhangers vazios. Em carrosséis educativos e informativos, a curiosidade deve vir da compreensão da próxima etapa real, sem urgência de campanha ou funil de vendas.
+
 ## 2. Tela, área segura e composição
 
 - Tela padrão: **1080 × 1350 px**, formato 4:5. Respeite as dimensões escolhidas pelo usuário.
 - Comece com um recuo de **64–80 px** em todos os lados para textos e elementos importantes; amplie quando a composição ou o corte da plataforma exigir. Formas decorativas podem ultrapassar a borda apenas quando não encobrirem conteúdo.
 - Dê a cada slide um ponto focal e um percurso intencional de leitura. Use alinhamento, escala, sobreposição, formas direcionais e espaço vazio para deixar esse percurso claro.
 - Crie uma pequena família de composições em vez de repetir um layout: mantenha alguns sinais da marca e varie escala de imagem, posição do texto, densidade e estrutura para criar ritmo.
+- Quando houver outros carrosséis da marca, compare suas composições e escolha uma direção visual realmente diferente para o novo tema. Mude a estrutura, a hierarquia e a linguagem visual quando fizer sentido; trocar a paleta no mesmo esqueleto de slides não é variação significativa. Preserve sinais reconhecíveis da marca, deixando assunto e objetivo determinarem a composição.
+- Dê uma função intencional ao fundo. Quando combinar com a marca e o usuário não pedir um campo plano, prefira textura sutil, grid, formas geométricas ou um motivo de logo/ícone relacionado à marca ou ao assunto em vez de uma cor lisa sem intenção. Varie escala e posição ao longo da sequência; mantenha pouco ruído, proteja o contraste do texto e não decore cada espaço vazio nem aplique marca d'água em todos os slides por padrão.
 - Equilibre áreas cheias e tranquilas. Um título grande ou uma imagem carregada precisa de respiro. Não preencha cada área vazia com card, badge, ícone, textura ou ornamento.
 - Use grades para alinhar margens e grupos, não para tornar todas as telas simétricas. A assimetria funciona quando o peso visual está equilibrado e a leitura continua clara.
 

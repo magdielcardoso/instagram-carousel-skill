@@ -1,0 +1,40 @@
+{
+  "title": "API de WhatsApp: o que acontece entre chamada e entrega",
+  "titleEnglish": "WhatsApp API: from request to delivery",
+  "descriptionEnglish": "A five-slide Portuguese-language StackLab carousel explaining the WhatsApp API flow with a technical blueprint visual direction.",
+  "brand": "StackLab",
+  "language": "pt-BR",
+  "slides": 5,
+  "dimensions": { "width": 1080, "height": 1350 },
+  "format": "PNG",
+  "source": "https://blog.stackzap.com.br/conceitos/api-de-whatsapp-o-que-e-e-como-funciona/",
+  "files": [
+    "imagens/01-api-de-whatsapp.png",
+    "imagens/02-api-de-whatsapp.png",
+    "imagens/03-api-de-whatsapp.png",
+    "imagens/04-api-de-whatsapp.png",
+    "imagens/05-api-de-whatsapp.png"
+  ],
+  "brandLogoAsset": "assets/stacklab-logo.png",
+  "iconLibrary": {
+    "name": "Phosphor Icons Web",
+    "version": "2.1.2",
+    "styles": ["Regular", "Duotone"],
+    "license": "MIT",
+    "assets": [
+      "assets/phosphor-icons.css",
+      "assets/Phosphor.woff2",
+      "assets/Phosphor-Duotone.woff2",
+      "assets/PHOSPHOR-LICENSE.txt"
+    ]
+  },
+  "displayFont": {
+    "name": "Anton",
+    "weight": 400,
+    "scope": "slide 1 and slide 5 titles",
+    "css": "assets/display-title.css",
+    "file": "assets/Anton-Regular.ttf",
+    "license": "OFL-1.1",
+    "licenseFile": "assets/ANTON-OFL.txt"
+  }
+}

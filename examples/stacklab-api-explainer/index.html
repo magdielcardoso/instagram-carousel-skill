@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>API de WhatsApp: como funciona — StackLab</title>
+<link rel="stylesheet" href="assets/phosphor-icons.css">
+<link rel="stylesheet" href="assets/display-title.css">
+<style>
+:root{
+  --blue:#59baf4;
+  --blue-deep:#126b98;
+  --blue-pale:#e8f5fc;
+  --ink:#10232d;
+  --muted:#4d606a;
+  --paper:#f7f8f6;
+  --white:#fff;
+  --line:#dce4e7;
+  --green:#16845b;
+  --amber:#8a5700;
+  --amber-pale:#fff4df;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#dce5e9;color:var(--ink);font-family:system-ui,-apple-system,sans-serif}
+.slides{display:grid;justify-content:center;gap:32px;padding:32px}
+.slide{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--paper)}
+.brand{position:absolute;z-index:2;top:62px;left:76px;width:190px;height:44px;object-fit:contain;object-position:left center;filter:brightness(0)}
+.page-mark{position:absolute;z-index:2;top:75px;right:76px;color:var(--muted);font-size:19px;font-weight:800;letter-spacing:.12em}
+.eyebrow{margin:0;color:var(--blue-deep);font-size:23px;font-weight:850;letter-spacing:.13em;line-height:1.25;text-transform:uppercase}
+.icon{display:inline-flex;align-items:center;justify-content:center;line-height:1}
+.icon.ph{font-size:1em}
+.icon.ph-duotone{font-size:1em}
+.cover{background:var(--paper)}
+.cover:before{position:absolute;right:0;bottom:0;left:0;height:16px;background:var(--blue);content:""}
+.cover-copy{position:absolute;top:228px;left:76px;z-index:1;width:850px}
+.cover h1,.final h2{margin:20px 0 0;font-family:Anton,Impact,sans-serif;font-weight:400;letter-spacing:.005em}
+.cover h1{font-size:176px;line-height:.9}
+.cover h1 span,.final h2 span{display:block}
+.cover .subhead{max-width:765px;margin:32px 0 0;color:var(--muted);font-size:32px;font-weight:650;line-height:1.38}
+.cover-journey{position:absolute;right:76px;bottom:175px;left:76px;display:grid;grid-template-columns:1fr 54px 1fr 54px 1fr;align-items:center;padding:30px 34px;border:1px solid var(--line);border-radius:24px;background:var(--white)}
+.journey-step{display:flex;align-items:center;gap:20px}
+.journey-icon{display:grid;width:72px;height:72px;flex:0 0 72px;place-items:center;border-radius:50%;color:var(--blue-deep);background:var(--blue-pale);font-size:38px}
+.journey-step.api .journey-icon{color:var(--ink);background:var(--blue)}
+.journey-step strong{font-size:24px;font-weight:850}
+.journey-step small{display:block;margin-top:5px;color:var(--muted);font-size:19px}
+.journey-arrow{justify-self:center;color:#77909b;font-size:30px}
+.cover-foot{position:absolute;right:76px;bottom:75px;left:76px;display:flex;justify-content:space-between;color:var(--muted);font-size:19px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.cover-foot span:last-child{color:var(--blue-deep)}
+.setup{background:var(--white)}
+.setup-head{position:absolute;top:218px;right:76px;left:76px}
+.setup-head h2,.flow-head h2,.signal-head h2{margin:18px 0 0;font-size:70px;font-weight:850;letter-spacing:-.055em;line-height:1.03}
+.setup-head>p:last-child,.flow-head>p:last-child,.signal-head>p:last-child{max-width:780px;margin:20px 0 0;color:var(--muted);font-size:29px;line-height:1.42}
+.requirements{position:absolute;top:535px;right:76px;left:76px}
+.requirement{display:grid;grid-template-columns:88px 82px 1fr;align-items:center;min-height:164px;border-top:1px solid var(--line)}
+.requirement:last-child{border-bottom:1px solid var(--line)}
+.requirement .number{color:var(--blue-deep);font-family:Anton,Impact,sans-serif;font-size:58px;line-height:1}
+.requirement .icon-wrap{display:grid;width:58px;height:58px;place-items:center;border-radius:50%;color:var(--blue-deep);background:var(--blue-pale);font-size:31px}
+.requirement.state-positive .icon-wrap{color:var(--green);background:#e7f5ee}
+.requirement h3{margin:0 0 8px;font-size:29px;font-weight:850;letter-spacing:-.025em}
+.requirement p{max-width:730px;margin:0;color:var(--muted);font-size:24px;line-height:1.42}
+.setup-foot{position:absolute;right:76px;bottom:86px;left:76px;display:flex;align-items:flex-start;gap:20px;padding:27px 30px;border-radius:16px;color:#403012;background:var(--amber-pale);font-size:23px;line-height:1.4}
+.setup-foot .icon{flex:0 0 auto;color:var(--amber);font-size:31px}
+.setup-foot strong{color:#6d4700}
+.flow{background:var(--blue-pale)}
+.flow .page-mark{color:var(--blue-deep)}
+.flow-head{position:absolute;top:218px;left:76px;right:76px}
+.flow-head .eyebrow{color:var(--blue-deep)}
+.flow-head h2{max-width:800px}
+.flow-head>p:last-child{max-width:740px}
+.flow-track{position:absolute;top:568px;right:76px;left:76px;display:grid;grid-template-columns:1fr 52px 1fr 52px 1fr 52px 1fr;align-items:start}
+.flow-node{text-align:center}
+.flow-index{display:block;margin-bottom:18px;color:var(--blue-deep);font-size:19px;font-weight:850;letter-spacing:.12em}
+.flow-icon{display:grid;width:112px;height:112px;margin:0 auto 22px;place-items:center;border:1px solid #d2e7f1;border-radius:50%;color:var(--blue-deep);background:var(--white);font-size:52px}
+.flow-node.api .flow-icon{color:var(--ink);background:var(--blue)}
+.flow-node.instance .flow-icon{color:var(--green);background:#e7f5ee;border-color:#d4eadf}
+.flow-node h3{margin:0 0 9px;font-size:25px;font-weight:850}
+.flow-node p{max-width:190px;margin:0 auto;color:var(--muted);font-size:21px;line-height:1.4}
+.flow-arrow{align-self:start;justify-self:center;margin-top:102px;color:#6b8794;font-size:30px}
+.webhook-note{position:absolute;right:76px;bottom:185px;left:76px;display:flex;align-items:center;gap:22px;padding:26px 30px;border:1px solid #d2e7f1;border-radius:18px;background:var(--white)}
+.webhook-note .icon{color:var(--blue-deep);font-size:38px}
+.webhook-note strong{display:block;margin-bottom:4px;font-size:24px}
+.webhook-note p{margin:0;color:var(--muted);font-size:22px;line-height:1.35}
+.flow-foot{position:absolute;bottom:78px;left:76px;color:var(--muted);font-size:18px;font-weight:750}
+.signal{background:var(--paper)}
+.signal-head{position:absolute;top:218px;right:76px;left:76px}
+.signal-head h2{max-width:850px}
+.signal-head>p:last-child{max-width:780px}
+.signal-panels{position:absolute;top:520px;right:76px;left:76px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.signal-panel{min-height:390px;padding:38px 40px;border:1px solid var(--line);border-radius:22px;background:var(--white)}
+.signal-panel.response{background:var(--blue-pale);border-color:#d2e7f1}
+.signal-panel .icon{margin-bottom:32px;color:var(--blue-deep);font-size:44px}
+.signal-panel .label{margin:0 0 12px;color:var(--blue-deep);font-size:19px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
+.signal-panel h3{margin:0 0 16px;font-size:38px;font-weight:850;letter-spacing:-.04em}
+.signal-panel .http-code{margin:0 0 6px;color:var(--blue-deep);font-family:Anton,Impact,sans-serif;font-size:104px;line-height:.95}
+.signal-panel p:last-child{max-width:390px;margin:0;color:var(--muted);font-size:24px;line-height:1.42}
+.signal-note{position:absolute;right:76px;bottom:103px;left:76px;display:flex;align-items:center;gap:18px;padding:25px 30px;border-radius:16px;color:#172b35;background:#e6f2f8;font-size:25px;font-weight:780;line-height:1.38}
+.signal-note .icon{flex:0 0 auto;color:var(--blue-deep);font-size:32px}
+.final{color:#f7fafb;background:var(--ink)}
+.final .brand{filter:brightness(0) invert(1)}
+.final .page-mark{color:#b8dff3}
+.final:after{position:absolute;right:0;bottom:0;left:0;height:16px;background:var(--blue);content:""}
+.final-copy{position:absolute;top:286px;left:76px;right:76px}
+.final .eyebrow{color:var(--blue)}
+.final h2{margin-top:24px;font-size:178px;line-height:.98}
+.final h2 span{color:var(--blue)}
+.final-question{max-width:820px;margin:32px 0 0;color:#e0e9ed;font-size:33px;font-weight:650;line-height:1.4}
+.actions{position:absolute;right:76px;bottom:170px;left:76px;display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.action{display:flex;align-items:flex-start;gap:18px;padding-top:22px;border-top:1px solid #49616d}
+.action .icon{color:var(--blue);font-size:38px}
+.action strong{display:block;font-size:23px;font-weight:850;letter-spacing:.05em;text-transform:uppercase}
+.action small{display:block;max-width:350px;margin-top:7px;color:#bfccd2;font-size:20px;line-height:1.4}
+.final-source{position:absolute;bottom:63px;left:76px;color:#a9bbc3;font-size:17px}
+body.render-one{width:1080px;height:1350px;overflow:hidden}
+body.render-one .slides{display:block;padding:0}
+body.render-one .slide{display:none}
+body.render-one .slide.active{display:block}
+/* Proposta visual: blueprint leve, com caminhos e marcações de integração. */
+.slide{background-image:repeating-linear-gradient(0deg,transparent 0 43px,rgba(18,107,152,.055) 43px 44px),repeating-linear-gradient(90deg,transparent 0 43px,rgba(18,107,152,.055) 43px 44px)}
+.cover{background-color:#f4f9fb;background-image:radial-gradient(circle at 100% 5%,rgba(89,186,244,.2),transparent 30%),repeating-linear-gradient(0deg,transparent 0 43px,rgba(18,107,152,.065) 43px 44px),repeating-linear-gradient(90deg,transparent 0 43px,rgba(18,107,152,.065) 43px 44px)}
+.cover:after{position:absolute;top:94px;right:-440px;width:720px;height:720px;border:2px solid rgba(18,107,152,.12);border-radius:50%;box-shadow:0 0 0 34px rgba(18,107,152,.045),0 0 0 68px rgba(18,107,152,.035);content:"";pointer-events:none}
+.cover-journey{z-index:1;border-color:#cbdfe9;box-shadow:0 12px 32px rgba(16,57,75,.08)}
+.journey-step.api .journey-icon{color:#073d5a;background:var(--blue)}
+.setup{background-color:#fbfdfe;background-image:radial-gradient(circle at 100% 0,rgba(89,186,244,.1),transparent 24%),repeating-linear-gradient(0deg,transparent 0 43px,rgba(18,107,152,.04) 43px 44px),repeating-linear-gradient(90deg,transparent 0 43px,rgba(18,107,152,.04) 43px 44px)}
+.requirements{display:grid;gap:14px}
+.requirement{min-height:150px;padding:18px 22px;border:1px solid #d4e4eb;border-left:6px solid var(--blue-deep);border-radius:4px 16px 16px 4px;background:rgba(255,255,255,.92);box-shadow:0 7px 20px rgba(20,70,90,.045)}
+.requirement:last-child{border-bottom:1px solid #d4e4eb}
+.requirement.state-positive{border-left-color:var(--green)}
+.requirement .number{font-size:62px}
+.flow{background-color:#eaf6fb;background-image:radial-gradient(circle at 95% 8%,rgba(89,186,244,.2),transparent 30%),repeating-linear-gradient(0deg,transparent 0 43px,rgba(18,107,152,.06) 43px 44px),repeating-linear-gradient(90deg,transparent 0 43px,rgba(18,107,152,.06) 43px 44px)}
+.flow-track{isolation:isolate}
+.flow-track:before{position:absolute;z-index:-1;top:164px;right:7%;left:7%;border-top:2px dashed #8ebbd0;content:""}
+.flow-icon{box-shadow:0 8px 18px rgba(18,73,94,.08)}
+.flow-node.api .flow-icon{color:#063c59;background:var(--blue)}
+.signal{background-color:#f8f7f2;background-image:radial-gradient(circle at 100% 100%,rgba(89,186,244,.12),transparent 25%),repeating-linear-gradient(0deg,transparent 0 43px,rgba(18,107,152,.045) 43px 44px),repeating-linear-gradient(90deg,transparent 0 43px,rgba(18,107,152,.045) 43px 44px)}
+.signal-panels{gap:0;filter:drop-shadow(0 12px 20px rgba(16,57,75,.09))}
+.signal-panel{min-height:390px;border-radius:0 22px 22px 0}
+.signal-panel.response{border-color:#126b98;border-radius:22px 0 0 22px;color:#f7fbfd;background:#126b98}
+.signal-panel.response .icon,.signal-panel.response .label,.signal-panel.response h3{color:#d7f1ff}
+.signal-panel.response .http-code{color:#fff}
+.signal-panel.response p:last-child{color:#e4f2f8}
+.signal-panel:not(.response) .icon{color:var(--green)}
+.signal-note{border-left:6px solid var(--blue-deep);background-color:#e6f2f8;background-image:radial-gradient(circle at 100% 0,rgba(89,186,244,.18),transparent 35%)}
+.final{background-color:#10232d;background-image:radial-gradient(circle at 100% 100%,rgba(89,186,244,.18),transparent 30%),repeating-linear-gradient(0deg,transparent 0 43px,rgba(178,224,246,.045) 43px 44px),repeating-linear-gradient(90deg,transparent 0 43px,rgba(178,224,246,.045) 43px 44px)}
+.final:before{position:absolute;top:320px;right:-280px;width:620px;height:620px;border:2px solid rgba(89,186,244,.17);border-radius:50%;content:"";pointer-events:none}
+.actions{z-index:1}
+.setup-teaser,.signal-teaser{position:absolute;right:76px;bottom:42px;left:76px;color:var(--blue-deep);font-size:17px;font-weight:850;letter-spacing:.055em;text-align:right}
+.setup-teaser span,.signal-teaser span,.flow-foot span{padding-left:7px;font-size:22px}
+.setup .setup-foot{bottom:91px}
+.flow-foot{font-size:18px}
+.signal-teaser{bottom:42px}
+.flow-track:before{top:100px}
+</style>
+</head>
+<body>
+<main class="slides">
+  <section class="slide cover" data-slide="1">
+    <img class="brand" src="assets/stacklab-logo.png" alt="StackLab">
+    <div class="page-mark">01 / 05</div>
+    <div class="cover-copy">
+      <p class="eyebrow">Guia visual · integração</p>
+      <h1><span>API DE</span><span>WHATSAPP</span></h1>
+      <p class="subhead">3 peças, 1 caminho — e um HTTP 200 que não confirma entrega.</p>
+    </div>
+    <div class="cover-journey" aria-label="Resumo do caminho: seu sistema, API e instância">
+      <div class="journey-step">
+        <span class="journey-icon"><i class="icon ph ph-database" aria-hidden="true"></i></span>
+        <span><strong>Seu sistema</strong><small>faz a chamada</small></span>
+      </div>
+      <i class="journey-arrow icon ph ph-arrow-right" aria-hidden="true"></i>
+      <div class="journey-step api">
+        <span class="journey-icon"><i class="icon ph ph-link-simple" aria-hidden="true"></i></span>
+        <span><strong>API</strong><small>valida e encaminha</small></span>
+      </div>
+      <i class="journey-arrow icon ph ph-arrow-right" aria-hidden="true"></i>
+      <div class="journey-step">
+        <span class="journey-icon"><i class="icon ph-duotone ph-chat-centered-dots" aria-hidden="true"></i></span>
+        <span><strong>Instância</strong><small>envia pela sessão</small></span>
+      </div>
+    </div>
+    <div class="cover-foot"><span>Entenda o fluxo, etapa por etapa</span><span>Deslize →</span></div>
+  </section>
+  <section class="slide setup" data-slide="2">
+    <img class="brand" src="assets/stacklab-logo.png" alt="StackLab">
+    <div class="page-mark">02 / 05</div>
+    <div class="setup-head">
+      <p class="eyebrow">Antes da primeira chamada</p>
+      <h2>Prepare o terreno.</h2>
+      <p>Três peças precisam se encontrar para a integração funcionar.</p>
+    </div>
+    <div class="requirements">
+      <article class="requirement">
+        <span class="number">01</span>
+        <span class="icon-wrap"><i class="icon ph-duotone ph-map-pin" aria-hidden="true"></i></span>
+        <div><h3>URL e documentação</h3><p>Use o endereço do seu ambiente e confira rota, método e payload na referência da versão.</p></div>
+      </article>
+      <article class="requirement">
+        <span class="number">02</span>
+        <span class="icon-wrap"><i class="icon ph-duotone ph-shield-check" aria-hidden="true"></i></span>
+        <div><h3>API Key no servidor</h3><p>Envie a credencial por HTTPS e mantenha o segredo fora do navegador.</p></div>
+      </article>
+      <article class="requirement state-positive">
+        <span class="number">03</span>
+        <span class="icon-wrap"><i class="icon ph-duotone ph-shield-check" aria-hidden="true"></i></span>
+        <div><h3>Instância conectada</h3><p>Vincule a conta pelo QR Code ou código de pareamento antes de iniciar o envio.</p></div>
+      </article>
+    </div>
+    <div class="setup-foot"><i class="icon ph-duotone ph-warning" aria-hidden="true"></i><span><strong>Importante:</strong> o fluxo da StackZap usa uma sessão vinculada ao dispositivo; não é a WhatsApp Business Platform oficial da Meta.</span></div>
+    <div class="setup-teaser">Quando as três peças se encontram, a chamada começa a percorrer uma rota <span>→</span></div>
+  </section>
+  <section class="slide flow" data-slide="3">
+    <img class="brand" src="assets/stacklab-logo.png" alt="StackLab">
+    <div class="page-mark">03 / 05</div>
+    <div class="flow-head">
+      <p class="eyebrow">Uma chamada percorre esta rota</p>
+      <h2>Do seu sistema<br>até o destino.</h2>
+      <p>Por HTTPS, a API recebe os dados, valida a operação e a encaminha à instância conectada.</p>
+    </div>
+    <div class="flow-track">
+      <article class="flow-node">
+        <span class="flow-index">01</span>
+        <span class="flow-icon"><i class="icon ph ph-database" aria-hidden="true"></i></span>
+        <h3>Seu sistema</h3><p>Cria a chamada HTTPS</p>
+      </article>
+      <i class="flow-arrow icon ph ph-arrow-right" aria-hidden="true"></i>
+      <article class="flow-node api">
+        <span class="flow-index">02</span>
+        <span class="flow-icon"><i class="icon ph ph-link-simple" aria-hidden="true"></i></span>
+        <h3>API</h3><p>Valida e encaminha</p>
+      </article>
+      <i class="flow-arrow icon ph ph-arrow-right" aria-hidden="true"></i>
+      <article class="flow-node instance">
+        <span class="flow-index">03</span>
+        <span class="flow-icon"><i class="icon ph-duotone ph-shield-check" aria-hidden="true"></i></span>
+        <h3>Instância</h3><p>Executa na sessão ativa</p>
+      </article>
+      <i class="flow-arrow icon ph ph-arrow-right" aria-hidden="true"></i>
+      <article class="flow-node">
+        <span class="flow-index">04</span>
+        <span class="flow-icon"><i class="icon ph-duotone ph-chat-centered-dots" aria-hidden="true"></i></span>
+        <h3>Destinatário</h3><p>Recebe a mensagem</p>
+      </article>
+    </div>
+    <div class="webhook-note">
+      <i class="icon ph ph-arrows-clockwise" aria-hidden="true"></i>
+      <span><strong>E depois?</strong><p>Eventos posteriores podem voltar pelo webhook, conforme a versão.</p></span>
+    </div>
+    <div class="flow-foot">A ordem varia por endpoint. E HTTP 200 não confirma entrega <span>→</span></div>
+  </section>
+  <section class="slide signal" data-slide="4">
+    <img class="brand" src="assets/stacklab-logo.png" alt="StackLab">
+    <div class="page-mark">04 / 05</div>
+    <div class="signal-head">
+      <p class="eyebrow">Não confunda as etapas</p>
+      <h2>HTTP 200 não confirma<br>entrega nem leitura.</h2>
+      <p>A resposta da API e os eventos posteriores descrevem momentos diferentes do fluxo.</p>
+    </div>
+    <div class="signal-panels">
+      <article class="signal-panel response">
+        <i class="icon ph ph-link-simple" aria-hidden="true"></i>
+        <p class="label">Retorno imediato</p>
+        <h3 class="http-code">HTTP 200</h3>
+        <p>O status e o JSON descrevem como a API tratou aquela operação.</p>
+      </article>
+      <article class="signal-panel">
+        <i class="icon ph ph-arrows-clockwise" aria-hidden="true"></i>
+        <p class="label">Eventos posteriores</p>
+        <h3>Webhook</h3>
+        <p>Pode informar mudanças depois da chamada, conforme os eventos disponíveis na versão.</p>
+      </article>
+    </div>
+    <div class="signal-note"><i class="icon ph-duotone ph-info" aria-hidden="true"></i><span>Confira na documentação qual evento representa cada atualização.</span></div>
+    <div class="signal-teaser">Com o fluxo claro, escolha onde aplicar esse mapa <span>→</span></div>
+  </section>
+  <section class="slide final" data-slide="5">
+    <img class="brand" src="assets/stacklab-logo.png" alt="StackLab">
+    <div class="page-mark">05 / 05</div>
+    <div class="final-copy">
+      <p class="eyebrow">Leve este mapa para a próxima integração</p>
+      <h2>QUAL<span>SISTEMA?</span></h2>
+      <p class="final-question">Qual sistema da sua empresa você conectaria ao WhatsApp primeiro?</p>
+    </div>
+    <div class="actions">
+      <div class="action"><i class="icon ph-duotone ph-bookmark-simple" aria-hidden="true"></i><span><strong>Salve o mapa</strong><small>Consulte o fluxo quando for planejar sua integração.</small></span></div>
+      <div class="action"><i class="icon ph-duotone ph-chat-centered-dots" aria-hidden="true"></i><span><strong>Comente aqui</strong><small>Conte qual processo você ligaria ao WhatsApp.</small></span></div>
+    </div>
+    <div class="final-source">Baseado no artigo “API de WhatsApp: o que é e como funciona” · StackZap</div>
+  </section>
+</main>
+<script>
+const slideNumber = new URLSearchParams(location.search).get("slide");
+if (slideNumber) {
+  document.body.classList.add("render-one");
+  document.querySelector('[data-slide="' + slideNumber + '"]')?.classList.add("active");
+}
+</script>
+</body>
+</html>
